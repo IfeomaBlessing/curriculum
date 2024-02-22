@@ -1,0 +1,122 @@
+.contact{ 
+    background:var(--bg1-color);
+    flex-direction: column;
+}
+
+.contact-container{
+     justify-content: space-between;
+}
+.contact h3{
+    align-self:flex-start;
+}
+.left-row{
+    width:35%;
+}
+.right-row{
+    width: 55%;
+ }
+
+ .left-row img{
+    width: 100%;
+}
+.contact-links{
+    gap: 15px;
+}
+
+.contact-links a{
+    margin-top:1rem;
+    color: grey;
+    background:rgba(0,0,0,0.1 );
+    padding:0.6rem;
+    border-radius:5px;
+    line-height:1rem;
+   
+}
+.left-row,
+.right-row{ 
+    background:var(--bg1-color);
+    padding:10px 2%; 
+      height:auto;
+     box-shadow:var(--form);
+ }
+
+.t-form{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;   
+}
+.t-form p{
+    margin-bottom:4px;
+}
+input,textarea{width: 100%;
+    padding:0.8rem;
+    border:1px solid grey;
+    border-radius: 4px;
+    margin-bottom:0.4rem;
+    color:var(--nav-color);
+    background:transparent;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.5),
+    5px 5px 10px rgba(0,0,0,0.2);
+}
+.contact button{
+    margin-top:auto;
+    display: block;
+}
+
+
+
+
+/* Media query------------------------------------ */
+
+@media screen and (max-width:950px){
+    .contact-container{
+        flex-direction: column;
+    }
+    .left-row,
+    .right-row{
+        width:100%;
+        padding:20px 5%; 
+    }
+    .left-row{
+        margin-bottom: 40px;
+    }
+    input,textarea{width: 100%;
+        padding:0.8rem;
+        border:1px solid grey;
+        border-radius: 4px;
+        margin-bottom:1rem;
+        color:var(--nav-color);
+        background:transparent;
+        box-shadow:2px 2px 8px rgba(0,0,0,0.5),
+        5px 5px 10px rgba(0,0,0,0.2);
+    }
+
+     .contact{ 
+    background:var(--bg1-color);
+
+}
+    
+}
+@media screen and (max-width:768px){
+
+    .left-row,
+    .right-row{ 
+        padding:10px 2%; 
+     }  
+     .t-form{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:8px;   
+    }  
+}
+
+@media screen and (max-width:600px){
+
+    .left-row,
+    .right-row{
+        width:100%;
+    }
+    .left-row{
+        margin-bottom: 20px;
+    }
+}
