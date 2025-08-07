@@ -67,36 +67,29 @@ justify-content: space-between;
 
   @media screen and (max-width:768px){
     .hero{
-        height:100vh;    
-    } 
-    .left-hero{
-        width:55%;
-        
+        margin-top:30px;
     }
-    .right-hero{
-        width: 40%; 
-    }   
-.right-hero img{
-    width:270px;
-    animation:none;  
-}
-
-    }
-
-  @media screen and (max-width:600px){
- 
+     
 .hero-container{
     flex-direction: column;
 }
- .left-hero{
-    width:100%;
-    padding:30% 0;
-    text-align: center;
-  }
-  
-  .right-hero{
-    display:none;
-  }
+    .left-hero{
+        width:100%;
+        padding:30% 0;
+        text-align: center;
+      }
+      
+      .right-hero{
+        display:none;
+      }
+
+    }
+
+  @media screen and (max-width:576px){
+
+    .hero{
+        margin-top:10px;
+    }
   
    
   }

@@ -110,7 +110,7 @@ input,textarea{width: 100%;
     }  
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:576px){
 
     .left-row,
     .right-row{

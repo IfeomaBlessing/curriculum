@@ -3,49 +3,56 @@ import './Cstyle.css'
 import Validation from './Validation'
 
 const Form = () => {
-    const [values, setValues] = useState({
-        name:"",
-        phone:"",
+  const [values, setValues] = useState({
+    name:"",
+    email:"",
+    message:""
+})
+const [error, setError] =useState({})
+const [success, setSuccess] =useState("")
+
+const handleInput =(e)=>{
+    setValues({...values, [e.target.name]:e.target.value})
+    setError({...error, [e.target.name] :""})  //Clears erros when user types
+}
+
+
+const handleSend =(e)=>{
+    e.preventDefault();
+    const validationErrors =  Validation(values);
+    setError(validationErrors);
+
+   
+    if(Object.keys(validationErrors).length === 0){
+      emailjs.send(
+        'service_ej0flyn',           // your service ID
+        'template_nva4owd',        // your client template ID
+        values,
+        'KYMZjeKp9HyjmZrm9'            // your EmailJS public key
+      );
+
+
+        setSuccess(`Hi ${values.name}, Your message has been sent successfully`);
+
+        setValues({name:"",
         email:"",
-        message:""
-    })
+        message:""});
 
-    const handleInput =(e)=>{
-        setValues({...values, [e.target.name]:e.target.value})
-    }
-    const [error, setError] =useState({})
-    const [isDataCorrect, setIsDataCorrect] =useState(false)
-  const [success, setSuccess] =useState("")
-
-    const handleSend =(e)=>{
-        e.preventDefault();
-        setError(Validation(values));
-        setIsDataCorrect(true)
-       
-        if(Object.keys(error).length === 0 && isDataCorrect){
-            setSuccess(`Hi ${values.name}, Your message has been sent successfully`);
-
-            setValues({name:"",
-            phone:"",
-            email:"",
-            message:""});
-
-            setTimeout (()=>{
-              setSuccess ("")
-            },1000)
-        }
-    
-        else{
-            
-
-              setSuccess(" ");
-        }
+        setTimeout (()=>{
+          setSuccess ("")
+        },1000)
     }
 
+    else{
+        
+
+          setSuccess(" ");
+    }
+}
   return (
     <form >
       
-    <div className='t-form' >
+
     <div>
     <input type='text' name='name'
     placeholder='Your Name' value={values.name}
@@ -55,15 +62,8 @@ const Form = () => {
       }
       </div>
 
-      <div>
-      <input type='digit'placeholder='Phone Number'
-      name='phone' value={values.phone}
-      onChange={handleInput}/>
-       {
-        error.phone && <p style={{color:"red", fontSize:"13px", marginBottom:"4px"}}>{error.phone}</p> 
-      }
-    </div>
-    </div>
+    
+    
 
     <div>
     <input type='email'placeholder='Email' 
