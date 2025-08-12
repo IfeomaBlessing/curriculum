@@ -1,8 +1,8 @@
 .about{
      background:var(--bg1-color); 
-display: flex;
-   position: relative;
-   flex-direction: column;
+     display: flex;
+     position: relative;
+     flex-direction: column;
 }
 .about-container{
     justify-content: space-between;
@@ -31,14 +31,15 @@ display: flex;
     align-items:center;
     justify-content: space-between;
     margin-top:3rem;
-       height:4rem;
+    height:4rem;
     background:var(--bg-color);
     box-shadow:var(--box-shadow);
-     padding:0 10px; 
+    padding:0 10px; 
 }
 .h-down h4{
     font-size:20px;
     color:var(--header-color);
+    margin-right:20px;
 }
 .skills{
     display: flex;
@@ -73,7 +74,8 @@ display: flex;
     transform:translate(50%);
 
 }
-.handles a{
+
+.icon{
     margin-bottom:20px;
     color: grey;
     background:rgba(0,0,0,0.1 );
@@ -84,7 +86,7 @@ display: flex;
     align-items: center;
 }
 
-.handles a:hover,
+a:hover .icon,
 .contact-links a:hover{
     background:var(--header-color);
     color:whitesmoke; 

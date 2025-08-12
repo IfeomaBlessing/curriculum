@@ -10,7 +10,7 @@ const Contact = () => {
     <>
     <section className='contact section flex-row'id='Contact'>
       
-       <h3 style={{marginBottom:"2rem"}}>
+       <h3 style={{marginBottom:"4rem"}}>
         Don't be shy! Hit me up!
        </h3>
 

@@ -3,7 +3,6 @@ import './App.css';
 import Hero from './Components/Hero';
 import Aboutpage from './Components/Aboutpage';
 import Contact from './Components/contactpage/Contact';
-// import Project from './Components/projectpage/Projects';
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-scroll'
 import './Components/Navstyle.css'
@@ -62,7 +61,7 @@ function App() {
                     spy={true}
                     smooth={true}
                     duration={1000}
-                    offset={-50} onClick ={clickMenu}>
+                    offset={-70} onClick ={clickMenu}>
                       Projects</Link>
                 </li>
 

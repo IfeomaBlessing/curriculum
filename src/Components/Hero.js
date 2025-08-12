@@ -6,9 +6,9 @@ import './Herostyle.css'
 const Hero = () => {
   return (
     <>
-    <section id='Home'className='hero section'>
+    <section id='Home'className='hero'>
   
-    <div className='hero-container flex-row'>
+    <div className='hero-container section flex-row'>
 
          <div className='left-hero'>
           <h1>FRONT-END DEVELOPER</h1>          

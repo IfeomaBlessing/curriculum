@@ -59,27 +59,32 @@ a{
 }
 
 .section{
-  padding:80px 10%;
+  padding:80px 5%;
+}
+h1,h2,h3{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--header-color);
+  margin-bottom: 0.5rem;
 }
 
 h1{
     font-size:3rem;
-    color:var(--header-color);
-  
 }
+
 h2{
   font-size:2rem;
-  color:var(--header-color);
 }
+
 h3{
   font-size:1.8rem;
-  color: var(--header-color);
 }
+
 h4{
-  font-size:1.3rem;
+  font-size:1.4rem;
 }
+
 p{
-  font-size:18px;
+  font-size:1rem;
   line-height:-11px;
   word-spacing:3px;
   color:var(--text-color);
@@ -110,10 +115,10 @@ button:hover{
 }
 
 
+
+
 @media screen and (max-width:991px){
-  .section{
-      padding:60px 8%;
-  }
+ 
   h1{font-size: 2.8rem;}
   h2{font-size: 2rem;} 
  h3{font-size: 1.6rem;}
@@ -122,15 +127,11 @@ button:hover{
 @media screen and (max-width:850px){
 
   h1{font-size: 2.5rem;}
-  h2{font-size: 2rem;} 
- h3{font-size: 1.6rem;}
 }
 
 
 @media screen and (max-width:768px){
-  .section{
-   padding: 60px 5%;
-  }
+  
   h1{font-size: 2.4rem;}
     h2{font-size: 2rem;} 
    h3{font-size: 1.6rem;}

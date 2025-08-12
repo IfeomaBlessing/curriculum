@@ -9,7 +9,7 @@ import project4 from '../../Assets/project4.png'
 const Projects = () => {
   return (
     <>
-      <section className='project section flex-row'id='Projects'>
+      <section className='project section'id='Projects'>
       <h1>My Works</h1>
       <div className="card-container">
       <div className="cards">

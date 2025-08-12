@@ -23,14 +23,14 @@
 .cards{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
-    grid-gap:30px;
+    grid-gap:20px;
     justify-content:space-between;
   
 }
 .card-box{
     position:relative;
     height:220px;
-    width:400px;
+    width:350px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow:var(--form);
@@ -109,13 +109,14 @@
 /* Media query------------------------------------ */
  @media screen and (max-width:1024px){
     .project{ 
-    padding:60px 8%; 
+    padding:60px 5%; 
    }
    .card-box{
-    height:220px;
+    height:200px;
     width:300px;
     grid-gap:20px;
    }
+
 
   }
 
@@ -167,7 +168,6 @@
       }
       .cards{
        grid-template-columns:100%;
-
     }
    
   }

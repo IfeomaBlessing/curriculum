@@ -7,12 +7,14 @@ import css from '../Assets/css.png'
 import JS from '../Assets/j-icon.png'
 import react from '../Assets/R-icon.png'
 import github from '../Assets/g-icon.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 
 const Aboutpage = () => {
   return (
  
-    <div className='about section flex-row' id='About'>
+    <section className='about section flex-row' id='About'>
            <h1 style={{marginBottom:"2rem"}}>About Me</h1>   
        <div className='about-container flex-row'>
 
@@ -55,19 +57,32 @@ I am relentlessly committed to delivering results and ensuring success.
        </div>
 
        <div className='handles flex'>
-       <a href="https://api.whatsapp.com/send?phone=+2347033827430" target='_blank'rel="noreferrer">
-        <i class="fa-brands fa-whatsapp"></i>
-       </a>
+       <a
+  href="https://wa.me/2347033827430"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+     <FontAwesomeIcon icon={ faWhatsapp} className='icon'/>
+</a>
 
-       <a href="https://www.linkedin.com/in/ifeoma-obodozie-1233241aa" target='_blank'rel="noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        </a>
+    <a
+  href="https://www.linkedin.com/in/ifeoma-obodozie-1233241aa" 
+  target="_blank"
+  rel="noopener noreferrer"
+>
+     <FontAwesomeIcon icon={ faLinkedin} className='icon'/>
+</a>
 
-        <a href="https://github.com/IfeomaBlessing/" target='_blank'rel="noreferrer">
-        <i class="fa-brands fa-github"></i>
-        </a>
+    <a
+  href="https://x.com/oma_ifeoma?s=21"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+     <FontAwesomeIcon icon={ faTwitter} className='icon'/>
+</a>
+
        </div>
-    </div>
+    </section>
   )
 }
 
