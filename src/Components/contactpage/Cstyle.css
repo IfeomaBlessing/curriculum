@@ -5,6 +5,7 @@
 
 .contact-container{
      justify-content: space-between;
+     padding:1rem 0;
 }
 .contact h3{
     align-self:flex-start;

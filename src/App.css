@@ -59,7 +59,7 @@ a{
 }
 
 .section{
-  padding:80px 5%;
+  padding:80px 10%;
 }
 h1,h2,h3{
   font-family: 'Montserrat', sans-serif;
@@ -107,11 +107,15 @@ button{
   box-shadow:var(--box-shadow);
   cursor: pointer;
   margin:2rem auto 0;
+  transition: all 0.3s ease;
 }
 button:hover{
-  color: green;
-   box-shadow:3px 5px 8px rgba(97, 240, 81, 0.3),
-   3px 5px 8px rgba(97, 240, 81, 0.3); 
+  color:white;
+  background: var(--header-color);
+    box-shadow: 3px 5px 8px rgba(234, 26, 7, 0.5),
+    5px 8px 12px rgba(124, 13, 3, 0.3);
+
+   transform: translateY(-3px);
 }
 
 

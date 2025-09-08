@@ -34,10 +34,9 @@ const Projects = () => {
           <Singlecard
           projectName ="Admin Dashboard"
                    cardImg ={project3}
-                   cardDesc="The React dashboard offers a comprehensive solution for users, combining functionality and a user-friendly interface.
-                    With features like data input, image upload, and local storage, 
-                   it provides a practical and personalized experience for efficient data management. "
+                   cardDesc="This admin dashboard offers a comprehensive solution for users, combining functionality and a user-friendly interface. With features like data input, image upload, and a REST API for real-time updates, it provides a practical and personalized experience for efficient data management. "
                    stack1 ="REACT" stack2="CSS"
+                   stack3 ="REST API"
                    projectUrl ="https://ifeomablessing.github.io/AdminDashboard/"/>
 
           <Singlecard

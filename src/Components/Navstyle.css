@@ -64,14 +64,15 @@ nav{
 .activeLink
 {
     color:var(--header-color);
-   
+      
 }
+
 
 .toggle{
     width:50px;
+    height:20px;
     background: grey;
     border-radius:20px;
-    padding:0.7rem 1.2rem;
     position: relative;
     cursor: pointer;
 }
@@ -80,8 +81,8 @@ nav{
 }
 .toggle span{
     display:block;
-    width:23px;
-    height:23px;
+    width:20px;
+    height:20px;
     background:white;
     border-radius:50%;
     position: absolute;
@@ -90,7 +91,7 @@ nav{
     transform:translateY(-1%);
 }
 .toggle.active span {
-    left:60%;
+    left:30px;
     background:green;
 }
 
@@ -131,6 +132,17 @@ nav{
     .Menu{
         display: block;
     }
+
+
+.activeLink::after{
+    display:none;
+}
+
+.activeLink
+{
+display:inherit;
+   
+}
 }
 
 
